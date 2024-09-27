@@ -1,0 +1,27 @@
+{
+    "name": "LLaMA DevContainer",
+    "runArgs": [
+      "--gpus=all"
+    ],
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "extensions": [
+      "ms-python.python"
+    ],
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python"
+    },
+    "mounts": [
+      "source=c:/Users/faizal/source/repos/transformers,target=/workspaces/transformers,type=bind",
+      "source=c:/Users/faizal/source/repos/Llama-2-7b,target=/workspaces/model,type=bind",
+      "source=c:/Users/faizal/source/repos/model-hf,target=/workspaces/model-hf,type=bind",
+      "source=c:/Users/faizal/source/repos/Llama-3.2-1B,target=/workspaces/Llama-3.2-1B,type=bind",
+      "source=c:/Users/faizal/source/repos/Llama-3.2-3B,target=/workspaces/Llama-3.2-3B,type=bind",
+      "source=c:/Users/faizal/source/repos/Llama-3.2-3B-Instruct,target=/workspaces/Llama-3.2-3B-Instruct,type=bind",
+      "source=c:/Users/faizal/source/repos/Llama-3.2-1B-Instruct,target=/workspaces/Llama-3.2-1B-Instruct,type=bind"
+    ],
+    "remoteUser": "root"
+  }
+  
